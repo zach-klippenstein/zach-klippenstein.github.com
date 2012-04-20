@@ -1,0 +1,29 @@
+
+.profile-pic {
+  background-color: black;
+  background-image: url('../../static/images/profile.jpg');
+  background-size: 11em;
+  background-position: left center;
+  background-repeat: no-repeat;
+  
+  height: 11em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  /*box-shadow: gray 2px 2px 10px;*/
+}
+
+.social-bar {
+  font-size: 2em;
+}
+.social-bar :hover {
+  text-decoration: none;
+}
+
+/*.hero-unit {
+  background-color: rgba(238, 238, 238, .5);
+}*/
+
+footer {
+  text-align: center;
+}
