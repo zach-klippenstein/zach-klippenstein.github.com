@@ -29,6 +29,25 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png">
+
+    <script src="static/js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        setLinksToOpenInNewWindow();
+      })
+
+      function setLinksToOpenInNewWindow() {
+        findTargetlessLinks().attr('target', '_blank');
+      }
+
+      function findTargetlessLinks() {
+        return getPage().add(".social-bar").find("a:not([target])")
+      }
+
+      function getPage() {
+        return $("body > div:not([class~='navbar'])");
+      }
+    </script>
   </head>
 
   <body data-spy="scroll">
@@ -51,11 +70,11 @@
               <li><a href="#developer">developer</a></li>
             </ul>
             <p class="navbar-text pull-right social-bar">
-              <a href="http://facebook.com/zach.klipp" target="_blank"><i class="icon-facebook-sign"></i></a>
-              <a href="https://plus.google.com/100880947724121861768/posts" target="_blank"><i class="icon-google-sign"></i></a>
-              <a href="http://twitter.com/elzachster" target="_blank"><i class="icon-twitter-sign"></i></a>
-              <a href="http://ca.linkedin.com/pub/zachary-klippenstein/23/368/75b" target="_blank"><i class="icon-linkedin-sign"></i></a>
-              <a href="https://github.com/zach-klippenstein" target="_blank"><i class="icon-github-sign"></i></a>
+              <a href="http://facebook.com/zach.klipp"><i class="icon-facebook-sign"></i></a>
+              <a href="https://plus.google.com/100880947724121861768/posts"><i class="icon-google-sign"></i></a>
+              <a href="http://twitter.com/elzachster"><i class="icon-twitter-sign"></i></a>
+              <a href="http://ca.linkedin.com/pub/zachary-klippenstein/23/368/75b"><i class="icon-linkedin-sign"></i></a>
+              <a href="https://github.com/zach-klippenstein"><i class="icon-github-sign"></i></a>
             </p>
             <p class="navbar-text pull-right">
               Contact me: &nbsp;
@@ -120,7 +139,6 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="static/js/jquery-1.7.2.js"></script>
     <script src="static/js/bootstrap-transition.js"></script>
     <script src="static/js/bootstrap-alert.js"></script>
     <script src="static/js/bootstrap-modal.js"></script>
