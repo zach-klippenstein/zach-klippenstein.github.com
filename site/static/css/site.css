@@ -1,4 +1,14 @@
 
+.icon-google-sign {
+  background-image: url('../../static/images/g-plus-icon.png');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+.icon-google-sign:hover {
+  background-image: url('../../static/images/g-plus-icon-hovered.png');
+}
+
 .profile-pic {
   background-color: black;
   background-image: url('../../static/images/profile.jpg');
