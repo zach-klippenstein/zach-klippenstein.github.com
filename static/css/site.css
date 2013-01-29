@@ -33,6 +33,12 @@
   border-radius: 5px;
 }
 
+.app-icon {
+  width: 96px;
+  height: 96px;
+  margin-right: 1em;
+}
+
 footer {
   text-align: center;
 }
