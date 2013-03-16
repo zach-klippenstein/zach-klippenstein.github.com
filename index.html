@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/Person">
   <head>
     <meta charset="utf-8">
     <title>zach klippenstein</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All about Zach Klippenstein">
     <meta name="author" content="Zachary Erin Klippenstein">
+    <meta itemprop="givenName" content="Zachary">
+    <meta itemprop="additionalName" content="Erin">
+    <meta itemprop="familyName" content="Klippenstein">
+    <meta itemprop="image" content="http://zachklipp.ca/static/images/profile.jpg">
+    <link rel="canonical" itemprop="url" href="http://zachklipp.ca">
+    <link href="https://plus.google.com/100880947724121861768?rel=author">
+    <link href="https://plus.google.com/100880947724121861768" itemprop="publisher">
 
     <!-- Le styles -->
     <link href="static/css/bootstrap.css" rel="stylesheet">
@@ -61,7 +67,7 @@
             <span class="icon-bar"></span>
           </a>
 
-          <a class="brand" href="#">zach erin klippenstein</a>
+          <a class="brand" href="#" itemprop="name">zachary erin klippenstein</a>
 
           <div class="nav-collapse">
             <ul class="nav">
@@ -70,8 +76,8 @@
               <li><a href="#developer">developer</a></li>
             </ul>
             <p class="navbar-text pull-right social-bar">
-              <a href="http://facebook.com/zach.klipp"><i class="icon-facebook-sign"></i></a>
               <a href="https://plus.google.com/100880947724121861768/posts"><i class="icon-google-sign"></i></a>
+              <a href="http://facebook.com/zach.klipp"><i class="icon-facebook-sign"></i></a>
               <a href="http://twitter.com/elzachster"><i class="icon-twitter-sign"></i></a>
               <a href="http://ca.linkedin.com/in/zachklipp"><i class="icon-linkedin-sign"></i></a>
               <a href="https://github.com/zach-klippenstein"><i class="icon-github-sign"></i></a>
@@ -96,6 +102,14 @@
               <h2>Atheist.</h2>
               <h2>Introvert.</h2>
             </div>
+
+            <!-- +1/Like buttons
+            <p><div class="g-plusone" data-size="medium" data-annotation="inline" data-width="220"></div></p>
+            <p><div class="fb-like" data-href="http://zachklipp.ca" data-send="false" data-width="220" data-show-faces="true"></div></p>
+            -->
+
+            <p><div class="g-plus" data-width="220" data-height="69" data-href="//plus.google.com/100880947724121861768" data-rel="author"></div></p>
+            <p><div class="fb-follow" data-href="https://www.facebook.com/zach.klipp" data-show-faces="true" data-width="220"></div></p>
           </section>
         </div>
 
@@ -103,7 +117,7 @@
           <section id="welcome" class="hero-unit">
             <h2>hello.</h2>
             <p>
-              I'm Zach, a child of the 90’s.
+              I'm <span itemprop="nickname">Zach</span>, a child of the 90’s.
             </p>
           </section>
 
@@ -112,8 +126,8 @@
               <div class="page-header">
                 <h2><i class="icon-book"></i> student</h2>
               </div>
-              <p>
-                I'm an undergraduate student at the <a href="http://umanitoba.ca">University of Manitoba</a> in Winnipeg, Manitoba, Canada.
+              <p itemprop="description">
+                I'm an undergraduate <span itemprop="role">student</span> at the <a href="http://umanitoba.ca" itemprop="affiliation">University of Manitoba</a> in Winnipeg, Manitoba, Canada.
                 I'm currently in my fourth year of a computer science degree, and have completed the <a href="http://coop.cs.umanitoba.ca">3-work-term co-op program</a>.
                 My minor is linguistics, chosen purely for the fun of it.
               </p>
@@ -125,7 +139,7 @@
                 <dt>Fall 2009 - Winter 2009</dt>
                 <dd>Dean's Honour List</dd>
               </dl>
-              Also, I received the Governor General's Bronze Medal in high school! 'Cause that's so relevant.
+              Also, I received the Governor General's Bronze Medal in high school! 'Cause that's <em>so</em> relevant.
             </section>
 
             <section id="developer" class="span6">
@@ -221,6 +235,27 @@
     <script src="static/js/bootstrap-carousel.js"></script>
     <script src="static/js/bootstrap-typeahead.js"></script>-->
 
+    <!-- For +1 button (and Add to Circles, if it weren't so ugly) -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
+    <!-- For Like, Follow buttons -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Google Analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-33566644-1']);
