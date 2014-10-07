@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/zachklipp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://zachklipp.com
+  * I am zachklipp (https://keybase.io/zachklipp) on keybase.
+  * I have a public key with fingerprint 01D0 C5AB 55E9 29A5 2337  E6CC 0EDD 53ED 8CE1 CD26
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "01d0c5ab55e929a52337e6cc0edd53ed8ce1cd26",
+            "host": "keybase.io",
+            "key_id": "0edd53ed8ce1cd26",
+            "uid": "6673ab5e5a6339da5a6f1b35ca662600",
+            "username": "zachklipp"
+        },
+        "service": {
+            "hostname": "zachklipp.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1412701267,
+    "expire_in": 157680000,
+    "prev": "15ab5512a6f9cdaf0149b954fc5860b86c2b0e6e8dda473fa10549e0aaaf6865",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.2
+Comment: https://keybase.io/crypto
+
+yMLwAnicO8LLzMDFyHc3+G3Pw7NqjKcPfC5lCDGRCa5WSspPqVSyqlbKTgVTaZl5
+6alFBUWZeSVKVkoGhikGyaaJSaamqZZGlommRsbG5qlmyckGqSkppsapKRbJqYbJ
+KUZmSjpKGfnFIB1AY5ISi1P1MvOBYkBOfGYKyBxM9aVgCTMzc2Og8ammiWbGxpYp
+iUA6zTDJ2DQ50czMyMzAAKSwOLUoLzE3Fai6KjE5Izsns6BAqVZHCShclpmcCnI0
+yG50JXrJ+blA3QVF+SX5yfk5QKmMkpICK5DOksoCkNLy1KR4qCHxSZl5KUCfAzWU
+pRYVZ+bnKVkZAlUml2SCTDU0MTQyNzA0MjPXUUqtKMgsSo3PBKkwNTezMAACkDWp
+ZUAjDcFhZWgE9IVlckpimoGhiWWSpalJWrKphZlBkoVZslGSQapZqkVKSqKJuXFa
+oqGBqYllqkFiYmKamYWZqRLIW4V5+UpWJkBnJqYDjSzOTM9LLCktSlWqPXQwhoWB
+kYuBjZUJFHcMXJwCsBj1XsL/331lu/Fy67Qcn56ZraIyx2cUKi8MK+3yPZo72XrC
+mQv+syQt8nzznnIVrDbfGaDfcnnySdHeTXN2LU/uf7WFQ9+7YIoA9z9B74+xE3a1
+bbkuujnDd7Hwk30Ha11ENnyITo3fpKopH3FYRmBrxhz2mYsnb3Jp+p51c0mqG8fR
+hqivfLsZlz/5OkfV8k281jlul/+laXGr3rBcf+FWuWjhzc3X6s2OvfiUH6HZ4Tbn
+vsKKPOsDQgvd47Qubjep2/j2/U3Juhl3FSc/erZTr/Vu5E2d7TkbK9gTsrQXyC2N
+n57Yyxhv/59tWnub/3t74483rvufTi+I/e43V5iLK85h8ZXy0k1ThO013I5lrr/P
+vK1L/8bsgvDw9ZZrSvyF3ISnXttQcP20NrP5udvrztUvTFuQnLpMwmN+BetDzuSP
+TTUnHn76ap06Uy5mS1b0BwkF/o4e47V9FjYzZp5idTe+IeWy5c01vVq1Xy/u1C2+
+pGDv1Ma+TeV1ouPER6vOZhce03Ncra/UkCzQxLSHUSoqoUOBVXWa92F5G3ad9d6f
+NTQ5O0xe7vJOy1upey46Uycxrn3flASJr1naBfMyn97kmX9e0L3B4/LxZ4pdxYlZ
+7tNEundcdbHOif5RI8isy+umOllly2vVuU9rft7fyxuyIG119dH1HblRJ1ecufB4
+vZzdo/Rn93PeTlmU9HH1r8cOCy8ujdjY8CRsrmIgAFCZj+0=
+=OrD/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zachklipp
+
+==================================================================
