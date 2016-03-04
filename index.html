@@ -1,279 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/Person">
-  <head>
-    <meta charset="utf-8">
-    <title>zach klippenstein</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Zachary Erin Klippenstein">
-    <meta itemprop="givenName" content="Zachary">
-    <meta itemprop="additionalName" content="Erin">
-    <meta itemprop="familyName" content="Klippenstein">
-    <meta itemprop="image" content="http://www.zachklipp.com/static/images/profile.jpg">
-    <meta property="fb:admins" content="692087482" />
-    <meta name="google-site-verification" content="tRWIEQREUi6Struefzas_-jiTzTYgQiUJO-AdhbtoTo" />
-    <link rel="canonical" itemprop="url" href="http://www.zachklipp.com">
-    <link href="https://plus.google.com/100880947724121861768?rel=author">
+<head>
+  <meta charset="utf-8">
+  <title>zach klippenstein</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Le styles -->
-    <link href="static/css/bootstrap.css" rel="stylesheet">
-    <link href="static/css/font-awesome.css" rel="stylesheet" >
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
-    <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="static/css/site.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!-- Semantic web stuff -->
+  <meta name="author" content="Zachary Erin Klippenstein">
+  <meta itemprop="givenName" content="Zachary">
+  <meta itemprop="additionalName" content="Erin">
+  <meta itemprop="familyName" content="Klippenstein">
+  <meta itemprop="image" content="https://www.zachklipp.com/static/images/profile.jpg">
+  <meta property="fb:admins" content="692087482"/>
+  <meta name="google-site-verification" content="tRWIEQREUi6Struefzas_-jiTzTYgQiUJO-AdhbtoTo"/>
+  <link rel="canonical" itemprop="url" href="https://www.zachklipp.com">
+  <link href="https://plus.google.com/100880947724121861768?rel=author">
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png">
+  <link href="static/css/site.css" rel="stylesheet">
 
-    <script src="static/js/jquery-1.7.2.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        setLinksToOpenInNewWindow();
-      })
+  <!-- Open all links in a new tab by default. -->
+  <base target="_blank">
 
-      function setLinksToOpenInNewWindow() {
-        findTargetlessLinks().attr('target', '_blank');
-      }
+  <!-- Google Analytics & property verification. -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      function findTargetlessLinks() {
-        return getPage().add(".social-bar").find("a:not([target])")
-      }
+    ga('create', 'UA-33566644-1', 'auto');
+    ga('send', 'pageview');
 
-      function getPage() {
-        return $("body > div:not([class~='navbar'])");
-      }
-    </script>
+  </script>
+</head>
+<body>
 
-    <!-- Google Analytics & property verification. -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<div class="container">
+  <nav>
+    <img src="static/images/profile.jpg" class="profile-image"/>
+    <ul>
+      <li><a href="#about" target="_self">about</a></li>
+      <li><a href="#projects" target="_self">projects</a></li>
+      <li><a href="#contact" target="_self">contact</a></li>
+    </ul>
+  </nav>
 
-      ga('create', 'UA-33566644-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-  </head>
-
-  <body data-spy="scroll">
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-
-          <a class="brand" href="#" itemprop="name">zachary erin klippenstein</a>
-
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#person">person</a></li>
-              <li><a href="#student">student</a></li>
-              <li><a href="#developer">developer</a></li>
-            </ul>
-            <p class="navbar-text pull-right social-bar">
-              <a href="https://plus.google.com/100880947724121861768/posts"><i class="icon-google-sign"></i></a>
-              <a href="http://facebook.com/zach.klipp"><i class="icon-facebook-sign"></i></a>
-              <a href="http://twitter.com/elzachster"><i class="icon-twitter-sign"></i></a>
-              <a href="http://ca.linkedin.com/in/zachklipp"><i class="icon-linkedin-sign"></i></a>
-              <a href="https://github.com/zach-klippenstein"><i class="icon-github-sign"></i></a>
-            </p>
-            <p class="navbar-text pull-right">
-              Contact me: &nbsp;
-            </p>
-          </div><!--/.nav-collapse -->
-        </div>
+  <main>
+    <section id="about" class="page hidden-when-wide">
+      <h1>zach klippenstein</h1>
+      <p>
+        I'm Canadian expat making Android apps at <a href="https://squareup.com/">Square</a> in San
+        Francisco. Come work with me!
+      </p>
+      <p>
+        I also play ukulele, run, swim, photograph, and even read books sometimes.
+      </p>
+    </section>
+    <hr/>
+    <section id="projects" class="page hidden-when-wide project-container">
+      <div class="project">
+        <a href="https://github.com/zach-klippenstein/goadb">
+          <h1>goadb</h1>
+          <p>A Golang library for interacting with adb.</p>
+        </a>
       </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row-fluid">
-
-        <div class="span3">
-          <section id="person">
-            <div class="well">
-              <div class="row-fluid profile-pic" ></div>
-              <h2>Caffeine fiend.</h2>
-              <h2>Vegetarian.</h2>
-              <h2>Atheist.</h2>
-              <h2>Introvert.</h2>
-            </div>
-
-            <!-- +1/Like buttons
-            <p><div class="g-plusone" data-size="medium" data-annotation="inline" data-width="220"></div></p>
-            <p><div class="fb-like" data-href="http://www.zachklipp.com" data-send="false" data-width="220" data-show-faces="true"></div></p>
-            -->
-
-            <p><div class="g-plus" data-width="220" data-height="69" data-href="//plus.google.com/100880947724121861768" data-rel="author"></div></p>
-            <p><a href="https://twitter.com/elzachster" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @elzachster</a></p>
-            <p><div class="fb-follow" data-href="https://www.facebook.com/zach.klipp" data-show-faces="true" data-width="220"></div></p>
-            <p><a href="http://ca.linkedin.com/in/zachklipp">
-              <img src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Zachary Klippenstein's profile on LinkedIn">
-            </a></p>
-          </section>
-        </div>
-
-        <div class="span9">
-          <section id="welcome" class="hero-unit">
-            <h2>hello.</h2>
-            <p>
-              I'm <span itemprop="nickname">Zach</span>, a child of the 90’s.
-            </p>
-          </section>
-
-          <div class="row-fluid">
-            <section id="student" class="span6">
-              <div class="page-header">
-                <h2><i class="icon-book"></i> student</h2>
-              </div>
-              <p itemprop="description">
-                I'm an undergraduate <span itemprop="role">student</span> at the <a href="http://umanitoba.ca" itemprop="affiliation">University of Manitoba</a> in Winnipeg, Manitoba, Canada.
-                I'm currently in my fourth year of a computer science degree, and have completed the <a href="http://coop.cs.umanitoba.ca">3-work-term co-op program</a>.
-                My minor is linguistics, chosen purely for the fun of it.
-              </p>
-              <p>
-                Expected graduation: April 2013.
-              </p>
-              <h3>Awards</h3>
-              <dl>
-                <dt>Fall 2009 - Winter 2009</dt>
-                <dd>Dean's Honour List</dd>
-              </dl>
-              Also, I received the Governor General's Bronze Medal in high school! 'Cause that's <em>so</em> relevant.
-            </section>
-
-            <section id="developer" class="span6">
-              <div class="page-header">
-                <h2><i class="icon-cog"></i> developer</h2>
-              </div>
-              <p>
-                I started writing code back in grade 6, naïve, and excited about things like QBASIC. Since then, I've spent a lot of money learning why QBASIC is nothing to be excited about.
-              </p>
-              <div class="well pull-left">
-                <a href="http://play.google.com/store/apps/details?id=com.zachklipp.intentsendertool">
-                  <img src="https://raw.githubusercontent.com/zach-klippenstein/with-intent/758cde8b2c53e0c7bb1ad5e9c8d6c0b09fe6f3b4/ic_launcher-web.png"
-                       class="app-icon pull-left"
-                       alt="With Intent Icon"
-                       title="View With Intent in the Play Store" />
-                </a>
-                <h3>
-                  With Intent
-                  <small class="pull-right">
-                    <a href="https://github.com/zach-klippenstein/with-intent">
-                      github »
-                    </a>
-                  </small>
-                </h3>
-                <p>
-                  With Intent is a utility app for developers for building and sending intents without writing scripts or test apps.
-                </p>
-              </div>
-              <div class="well pull-left">
-                <a href="http://play.google.com/store/apps/details?id=com.zachklipp.captivate">
-                  <img src="https://raw.github.com/zach-klippenstein/captivate/master/graphics/launcher%20icon%20512.png"
-                       class="app-icon pull-left"
-                       alt="Captivate Icon"
-                       title="View Captivate in the Play Store" />
-                </a>
-                <h3>
-                  Captivate
-                  <small class="pull-right">
-                    <a href="https://github.com/zach-klippenstein/captivate">
-                      github »
-                    </a>
-                  </small>
-                </h3>
-                <p>
-                  A simple service for detecting wifi hotspots that ask for information (captive portals),
-                  and automatically showing the login page.
-                </p>
-              </div>
-              <div class="well pull-left">
-                <h3>
-                  Souzou
-                  <small class="pull-right">
-                    <a href="http://sourceforge.net/projects/souzou/">
-                      sourceforge »
-                    </a>
-                  </small>
-                </h3>
-                <p>
-                  Souzou is a cross-platform drawing board application written in C++.
-                  It is intended to be used with homemade Wiimote smartboards, and allows the
-                  interactive whiteboard to be used like a normal whiteboard, and allows you to
-                  save captures of the content.
-                </p>
-              </div>
-            </section>
-          </div>
-        </div>
-
+      <div class="project">
+        <a href="https://github.com/zach-klippenstein/adbfs">
+          <h1>adbfs</h1>
+          <p>A FUSE filesystem that uses goadb to expose Android devices' filesystems.</p>
+        </a>
       </div>
+      <div class="project">
+        <a href="https://github.com/zach-klippenstein/with-intent">
+          <h1>with intent</h1>
+          <p>A utility for building and sending Android intents.</p>
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://sourceforge.net/projects/souzou/">
+          <h1>souzou</h1>
+          <p>A FUSE filesystem that uses goadb to expose Android devices' filesystems.</p>
+        </a>
+      </div>
+    </section>
+    <hr/>
+    <section id="contact" class="page hidden-when-wide">
+      <ul>
+        <li><a href="https://twitter.com/elzachster">Twitter</a></li>
+        <li><a href="https://www.instagram.com/elzachster/">Instagram</a></li>
+        <li><a href="https://facebook.com/zach.klipp">Facebook</a></li>
+        <li><a href="https://ca.linkedin.com/in/zachklipp">LinkedIn</a></li>
+        <li><a href="https://github.com/zach-klippenstein">GitHub</a></li>
+        <li><a href="https://keybase.io/zachklipp">Keybase</a></li>
+      </ul>
+    </section>
+  </main>
+</div>
 
-      <hr>
+<!-- Detect unsupported browsers. -->
+<script lang="javascript">
+  function supportsLet() {
+    try {
+      eval('"use strict"; let c = 5;');
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+  if (!supportsLet()) {
+    // Browser not supported.
+    document.body.innerHTML = "<p>Please use a browser that supports ES6.</p>";
+  }
+</script>
 
-      <footer>
-        <p><small>&copy; Zachary Klippenstein 2013</small></p>
-      </footer>
-
-    </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="static/js/bootstrap-scrollspy.js"></script>
-    <script src="static/js/bootstrap-tab.js"></script>
-    <script src="static/js/bootstrap-collapse.js"></script>
-    <!--<script src="static/js/bootstrap-affix.js"></script>
-    <script src="static/js/bootstrap-transition.js"></script>
-    <script src="static/js/bootstrap-alert.js"></script>
-    <script src="static/js/bootstrap-modal.js"></script>
-    <script src="static/js/bootstrap-dropdown.js"></script>
-    <script src="static/js/bootstrap-tooltip.js"></script>
-    <script src="static/js/bootstrap-popover.js"></script>
-    <script src="static/js/bootstrap-button.js"></script>
-    <script src="static/js/bootstrap-carousel.js"></script>
-    <script src="static/js/bootstrap-typeahead.js"></script>-->
-
-    <!-- For Google +1 button (and Add to Circles, if it weren't so ugly) -->
-    <script type="text/javascript">
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
-    
-    <!-- For Twitter follow button -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-    <!-- For Facebook Like, Follow buttons -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-  </body>
+<!-- The navigation script requires the page to be loaded. -->
+<script lang="javascript" src="static/js/site.js"></script>
+</body>
 </html>

@@ -1,44 +1,234 @@
-
-.icon-google-sign {
-  background-image: url('../../static/images/g-plus-icon.png');
-  background-size: contain;
-  width: 20px;
-  height: 20px;
-}
-.icon-google-sign:hover {
-  background-image: url('../../static/images/g-plus-icon-hovered.png');
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    height: 100%;
+    font-weight: 200;
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 85%);
 }
 
-.social-bar {
-  font-size: 2em;
-}
-.social-bar :hover {
-  text-decoration: none;
-}
-
-#welcome {
-  text-align: center;
-}
-
-.profile-pic {
-  background-color: black;
-  background-image: url('../../static/images/profile.jpg');
-  background-size: 11em;
-  background-position: left center;
-  background-repeat: no-repeat;
-  
-  height: 11em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  border-radius: 5px;
+body {
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.app-icon {
-  width: 96px;
-  height: 96px;
-  margin-right: 1em;
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 640px;
 }
 
-footer {
-  text-align: center;
+ul {
+    list-style-type: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+nav {
+    height: 480px content-box;
+
+    font-weight: 900;
+    font-variant: small-caps;
+    font-family: "Helvetica Neue Light", "Helvetica Light", Arial, sans-serif;
+    color: hsl(0, 0%, 45%);
+
+    display: flex;
+    flex-direction: column;
+    /* Vertically center the list. */
+    align-items: center;
+    /* Right-align links. */
+    justify-content: center;
+
+    border-right: thin dotted hsl(0, 0%, 30%);
+    padding: 0 16px 0 0;
+    /* Don't expand the border if the main content is taller than us. */
+    margin: auto 0 auto 16px;
+}
+
+.profile-image {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    text-align: end;
+    margin-top: 16px;
+}
+
+nav li:first-child {
+    margin-top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: hsl(0, 0%, 65%);
+}
+
+nav a.selected {
+    color: hsl(0, 0%, 85%);
+}
+
+main {
+    display: flex;
+    height: 480px content-box;
+    align-items: center;
+    align-content: flex-start;
+    margin: 0 16px 0 16px;
+    flex-wrap: nowrap;
+
+    line-height: 1.25;
+}
+
+main li {
+    margin-top: 8px;
+}
+
+main li:first-child {
+    margin-top: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0 16px 0;
+}
+
+main hr {
+    display: none;
+}
+
+h1 {
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: "Helvetica Neue Light", "Helvetica Light", Arial, sans-serif;
+    color: hsl(0, 0%, 65%);
+
+    margin: 0 0 16px 0;
+}
+
+main p {
+    margin: 0 0 16px 0;
+}
+
+main p:last-child {
+    margin: 0 0 0 0;
+}
+
+main a {
+    color: hsl(0, 0%, 85%);
+    text-decoration: none;
+    border-bottom: thin dotted hsl(0, 0%, 45%);
+}
+
+main a:hover {
+    border-bottom-color: hsl(0, 0%, 65%);
+}
+
+/*
+ This is used to control which page is shown.
+ All pages should be hard-coded with this class
+ in HTML to prevent flicker on load.
+*/
+.hidden-when-wide {
+    display: none;
+}
+
+.project-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    max-width: 220px;
+    flex-direction: column;
+
+    margin: 0 8px 8px 0;
+    padding: 8px 8px 8px 8px;
+    background-color: hsl(0, 0%, 15%);
+}
+
+.project:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.project > a {
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    border: none;
+}
+
+.project h1 {
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: bold;
+    font-variant: small-caps;
+
+    margin: 0 0 8px 0;
+}
+
+.project p {
+    margin: 0 0 8px 0;
+    font-weight: 200;
+}
+
+@media (max-device-width: 600px) {
+    .container {
+        height: 100%;
+        margin: 16px 0 0 0;
+    }
+
+    /* Hide the nav bar on mobile. */
+    nav {
+        display: none;
+    }
+
+    main {
+        height: 100%;
+        /* Horizontally center items. */
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    main > * {
+        /* Prevent vertical shrinking on short screens. */
+        flex-shrink: 0;
+    }
+
+    main hr {
+        display: inherit;
+        width: 75%;
+        padding: 0 0 0 0;
+        border: none;
+        border-top: thin dotted hsl(0, 0%, 30%);
+    }
+
+    main li {
+        text-align: center;
+    }
+
+    .hidden-when-wide {
+        display: inherit;
+    }
+
+    .project-container {
+        justify-content: center;
+    }
 }
