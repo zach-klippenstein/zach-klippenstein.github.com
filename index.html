@@ -118,7 +118,11 @@
   }
   if (!supportsLet()) {
     // Browser not supported.
-    document.body.innerHTML = "<p>Please use a browser that supports ES6.</p>";
+    document.body.innerHTML = '<p class="unsupported">' +
+        'Please use a browser that supports ES6, like ' +
+        '<a href="https://www.google.com/chrome">Chrome</a> or ' +
+        '<a href="https://www.mozilla.org/en-US/firefox/new">Firefox</a>.' +
+        '</p>';
   }
 </script>
 
