@@ -7,7 +7,7 @@ function parseFragment(url) {
         return null;
     }
 
-    let i = url.lastIndexOf("#");
+    var i = url.lastIndexOf("#");
     if (i < 0) {
         return null;
     }
@@ -21,17 +21,17 @@ function showPage(id) {
         throw "no page ID";
     }
 
-    let nodeList = document.querySelectorAll("li > a");
-    for (let i = 0; i < nodeList.length; i++) {
-        let link = nodeList.item(i);
-        let linkFragment = parseFragment(link.href);
+    var nodeList = document.querySelectorAll("li > a");
+    for (var i = 0; i < nodeList.length; i++) {
+        var link = nodeList.item(i);
+        var linkFragment = parseFragment(link.href);
         link.classList.toggle("selected", linkFragment === id);
     }
 
     nodeList = document.querySelectorAll(".page");
     var selectedPage = null;
-    for (let i = 0; i < nodeList.length; i++) {
-        let page = nodeList.item(i);
+    for (var i = 0; i < nodeList.length; i++) {
+        var page = nodeList.item(i);
         if (page.id === id) {
             selectedPage = page;
             page.classList.toggle("hidden-when-wide", false);
@@ -58,7 +58,7 @@ function init() {
     if (window.location.hash) {
         showPage(window.location.hash);
     } else if (navLinks.length > 0) {
-        let firstPage = navLinks[0].href;
+        var firstPage = navLinks[0].href;
 
         // Hide pages until the "redirect" takes effect.
         showPage(firstPage);

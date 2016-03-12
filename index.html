@@ -106,26 +106,6 @@
   </main>
 </div>
 
-<!-- Detect unsupported browsers. -->
-<script lang="javascript">
-  function supportsLet() {
-    try {
-      eval('"use strict"; let c = 5;');
-      return true;
-    } catch (e) {
-      return false;
-    }
-  }
-  if (!supportsLet()) {
-    // Browser not supported.
-    document.body.innerHTML = '<p class="unsupported">' +
-        'Please use a browser that supports ES6, like ' +
-        '<a href="https://www.google.com/chrome">Chrome</a> or ' +
-        '<a href="https://www.mozilla.org/en-US/firefox/new">Firefox</a>.' +
-        '</p>';
-  }
-</script>
-
 <!-- The navigation script requires the page to be loaded. -->
 <script lang="javascript" src="static/js/site.js"></script>
 </body>
