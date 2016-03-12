@@ -1,3 +1,6 @@
+// This file should contain the minimum amount of code necessary to make the site work.
+// It should not require ES6 support.
+
 "use strict";
 
 var navLinks = document.querySelectorAll("li > a");

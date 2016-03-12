@@ -183,13 +183,28 @@ main p:last-child {
     border: none;
 }
 
+.project header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0 8px 0;
+}
+
 .project h1 {
+    display: inline-block;
     font-size: inherit;
     font-style: inherit;
     font-weight: bold;
     font-variant: small-caps;
 
-    margin: 0 0 8px 0;
+    margin: 0 8px 0 0;
+}
+
+.project time {
+    font-size: x-small;
+    font-style: italic;
+    color: hsl(0, 0%, 65%);
 }
 
 .project p {
